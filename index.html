@@ -1,0 +1,542 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/fav-icon1.jpeg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>VIEL</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">VIEL</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li><a class="menu-list-item active" href = index.html >Home</a></li>
+                    <li><a class="menu-list-item active" href = index.html >Coming Soon</a></li>
+                    <li><a class="menu-list-item active" href = index.html >News</a></li>
+                    <li><a class="menu-list-item active" href = contact.html >Contacts </a></li>
+              
+
+
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="img/profile.jpg" alt="">
+                <div class="profile-text-container">
+                    
+                    <a href = "logout.php"> </p>Logout</p></a>
+                    <style>
+                        a{
+                            color: gray;
+                            text-decoration: none;
+                        }
+                    </style>
+                    
+
+
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+    body {
+       background: #000000;
+       color: #fff;
+   }
+   </style>
+
+
+
+
+
+
+<style>
+
+body {
+    margin: 0;
+    font-family: Tahoma, sans-serif;
+}
+
+.intro {
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.intro:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, .8);
+    
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.intro__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.intro__title {
+    margin: 0;
+
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+}
+
+.containerr {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.videoo {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 56.25%;
+}
+
+.video__media {
+    width: 100%;
+    height: auto;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+</style>
+
+<body>
+
+
+    <div class="intro">
+        <div class="videoo">
+            <video class="video__media" src="GlavFon.mp4" autoplay muted loop></video>
+        </div>
+
+        <div class="intro__content">
+            <div class="containerr">
+            <p class="intro__title">Welcome!
+</p>
+
+            
+            <p class="intro__title"><?php 
+session_start();
+
+    include("connection.php");
+    include("functions.php");
+
+    $user_data = check_login($con);
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My website</title>
+</head>
+<body>
+
+    <br>
+    Enjoy watching movies with your nearest and dearest <?php echo $user_data['user_name']; ?>
+</body>
+</html></p>
+
+
+                
+        
+                
+                
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+
+                       <div class="movie-list-container">
+                <h1 onmouseover="style.color='green'" onmouseout="style.color='white'" class="movie-list-title">OSCAR 2022</h1>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  font-size: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: green;
+}
+</style>
+</head>
+<body>
+
+
+<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+
+<script>
+function myFunction(x) {
+  x.classList.toggle("fa-thumbs-down");
+}
+</script>
+
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://www.film.ru/sites/default/files/styles/thumb_1024x450/public/trailers_frame/coda.jpg" alt="">
+                            <span class="movie-list-item-title">CODA: Child of Deaf Parents </span>
+                            <p class="movie-list-item-desc">Ruby loves to sing. When she sings, everything around her becomes bright and plays with serene colors.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/JfVOs4VSpmA" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://itc.ua/wp-content/uploads/2021/07/king-richard.jpg" alt="">
+                            <span class="movie-list-item-title">King Richard</span>
+                            <p class="movie-list-item-desc">The picture will tell the story of Richard Williams, whose tenacity helped to bring his talented daughters Venus and Serena from the streets of Compton to the top of world tennis.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/gmRKv7n2If8lton" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://gl-img.rg.ru/uploads/images/2021/09/16/dyuna_355.jpg" alt="">
+                            <span class="movie-list-item-title">Dune</span>
+                            <p class="movie-list-item-desc">The name Gucci sounded so sweet, so seductive... Synonymous with luxury, style, power.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/pGi3Bgn7U5U" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://gdb.voanews.com/0D33D550-73DD-4E46-BA4A-12D9CCECA7CB_cx0_cy7_cw100_w408_r1_s.jpg" alt="">
+                            <span class="movie-list-item-title">Belfust</span>
+                            <p class="movie-list-item-desc">The story of a young and ambitious girl who, thanks to her persistence and the help of her fairy godmother, achieves the realization of her wildest dreams.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/T1NeHRuPpoM" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://zetflix.pro/uploads/posts/2021-09/1631699408_netflix-poster-2.jpg" alt="">
+                            <span class="movie-list-item-title">The power of the dog</span>
+                            <p class="movie-list-item-desc">The last school year of high school begins. Lara Jin returns from a family trip to Korea and contemplates which university to attend, with or without Peter.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/2jPdejek5QA" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://fakty.ua/photos2/article/39/9/390993.jpg" alt="">
+                            <span class="movie-list-item-title">Lacorice pizza</span>
+                            <p class="movie-list-item-desc">More than two thousand years ago, the Roman general Mark Antony, who was in love with Cleopatra, gave her three eggs decorated with gold and precious stones.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/Pj0wz7zu3Ms" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://progressive.org/downloads/16824/download/Screen%20Shot%202021-12-09%20at%209.12.28%20AM.png?cb=513c2341a0cbd32aeb041f2d7a8f772d&w=1352" alt="">
+                            <span class="movie-list-item-title">West side story</span>
+                            <p class="movie-list-item-desc">With a whopping 121 minutes of Tik Tok star Addison Rae’s emotionless acting, the latest Netflix rom-com He’s All That marks Rae’s introduction to Hollywood… and not much else.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/XqTPaRz8Nx8" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <div class="movie-list-container">
+                <h1 onmouseover="style.color='green'" onmouseout="style.color='white'" class="movie-list-title">ROMANCE</h1>
+
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  font-size: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: green;
+}
+</style>
+</head>
+<body>
+
+
+<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+
+<script>
+function myFunction(x) {
+  x.classList.toggle("fa-thumbs-down");
+}
+</script>
+
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://media1.popsugar-assets.com/files/thumbor/7CwCuGAKxTrQ4wPyOBpKjSsd1JI/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2017/04/19/743/n/41542884/5429b59c8e78fbc4_MCDTITA_FE014_H_1_.JPG" alt="">
+                            <span class="movie-list-item-title">Titanic</span>
+                            <p class="movie-list-item-desc">On the first and last voyage of the posh Titanic, two people meet.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/kVrqfYjkTdQ" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://upload.wikimedia.org/wikipedia/en/0/03/Prideandprejudiceposter.jpg" alt="">
+                            <span class="movie-list-item-title">Pride and Prejudice</span>
+                            <p class="movie-list-item-desc">The Bennetts faced serious problems. The 18th-century English countryside was dull, but it was not this fact that troubled the couple.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/1dYv5u6v55Y" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/07/twilight-movies-in-order.jpg?q=50&fit=contain&w=943&h=472&dpr=1.5" alt="">
+                            <span class="movie-list-item-title">Twilight</span>
+                            <p class="movie-list-item-desc">Bella is a seventeen-year-old girl who decides to move in with her father in Forks.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/uxjNDE2fMjI" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://cinemusefilms.files.wordpress.com/2016/06/87-me-before-you.jpg" alt="">
+                            <span class="movie-list-item-title">Me befor you</span>
+                            <p class="movie-list-item-desc">The storyline is simple. Working class girl Louisa Clark takes a six-month contract to be a carer for quadriplegic Will Traynor</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/Eh993__rOxA" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vbWVkaWEucmJsLm1zL2ltYWdlP3U9JTJGZmlsZXMlMkYyMDE1JTJGMTAlMkYxNyUyRjYzNTgwNjc3NjYzNDUwMzAzNy0yOTYyODIwODlfODElMkJGdkVCcDBpTC5fU0wxNDIzXy5qcGcmaG89aHR0cCUzQSUyRiUyRmNkbjEudGhlb2R5c3NleW9ubGluZS5jb20mcz0yOTcmaD0xOGEzOWFmZWI0MmFjYWU5ODYwNjQ4ZjMzNzM1ODk5MDgzZTlmMTIxYzBiOGNhM2UwMzc4NTAxNzhkM2M3ODZjJnNpemU9OTgweCZjPTI0NjQyMDM4MzUiLCJleHBpcmVzX2F0IjoxNjk5MzcwODYxfQ.B6cDJGYqE_QEgYxzZD_E-ztkr6Hngngzt-ZB971xDUk/img.jpg?width=1200&height=628" alt="">
+                            <span class="movie-list-item-title">About time</span>
+                            <p class="movie-list-item-desc">im (Domhnall Gleeson) plays a 20-something wannabe lawyer living in London who is incredibly awkward yet adorably sweet (and ginger).</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/T7A810duHvw" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://latitudesworldtherapy.files.wordpress.com/2018/08/the-age-of-adaline-55658482aa587.jpg" alt="">
+                            <span class="movie-list-item-title">The age of Adaline</span>
+                            <p class="movie-list-item-desc">Adaline Bowman was no different from the rest of the people, but in the winter of 1935 her life changed forever.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/7UzSekc0LoQ" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://www.cheatsheet.com/wp-content/uploads/2021/01/The-Notebook.jpg" alt="">
+                            <span class="movie-list-item-title">The notebook</span>
+                            <p class="movie-list-item-desc">In a nursing home, resident Duke reads a romance story to an old woman who has senile dementia with memory loss.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/dGIGG6QLjLg" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('https://assets.cdn.moviepilot.de/files/a013a9684069be54a4007898ed45e12e20aea662fdc0d03a651dde3ff787/limit/1024/2000/5e7d1eba9442b.jpg');">
+                <img class="featured-title" src="img/f-t-2.png" alt="">
+                <p class="featured-desc">The story of four families living a quiet and measured life in a small German town. The apparent idyll is shattered when two children disappear without a trace and dark secrets of the past are resurrected.</p>
+                <a href="https://youtu.be/cq2iTHoLrt0" class="movie-list-item-button">Watch trailer now</a>
+            </div>
+
+<div class="movie-list-container">
+                <h1 onmouseover="style.color='green'" onmouseout="style.color='gray'" class="movie-list-title">CARTOONS</h1>
+
+                <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: green;
+}
+</style>
+</head>
+<body>
+
+
+<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+
+<script>
+function myFunction(x) {
+  x.classList.toggle("fa-thumbs-down");
+}
+</script>
+                        <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="http://pm1.narvii.com/7253/306c7afcc7c81c35fbef2837ade3452b4ba498ebr1-1175-1767v2_uhq.jpg" alt="">
+                            <span class="movie-list-item-title">Frozen</span>
+                            <p class="movie-list-item-desc">"Frozen" about the snow queen Elsa, her sister Anna, her friend Christoph, and the merry pets Sven the reindeer and Olaf the snowman.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="frozen.html" class="movie-list-item-button">Watch now</a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://lumiere-a.akamaihd.net/v1/images/soulmovielanding-web-m_7cacd94f.jpeg?region=0,0,800,602" alt="">
+                            <span class="movie-list-item-title">Soul</span>
+                            <p class="movie-list-item-desc">Joe Gardner, an elderly high school music teacher, has dreamed all his life of performing on stage as part of a jazz ensemble.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/xOsLIiBStEs" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://www.denofgeek.com/wp-content/uploads/2017/04/boss_baby_main.jpg?fit=1200%2C630" alt="">
+                            <span class="movie-list-item-title">The Boss Baby</span>
+                            <p class="movie-list-item-desc">The seven-year-old fantasist Tima is jealous of his parents' newly arrived brother.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/k397HRbTtWI" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://is1-ssl.mzstatic.com/image/thumb/Features49/v4/2a/c1/5d/2ac15d9d-77d9-339e-afd6-5231b52d1d27/source/1200x630fa.png" alt="">
+                            <span class="movie-list-item-title">Zootopia</span>
+                            <p class="movie-list-item-desc">Welcome to Zootopia, a modern city populated by all kinds of animals, from giant elephants to tiny mice.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/yCOPJi0Urq4" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://multoigri.ru/images/wiki/content/wiki-gravityfalls-02.jpg" alt="">
+                            <span class="movie-list-item-title">Gravity Falls</span>
+                            <p class="movie-list-item-desc">"Gravity Falls" is a popular Disney animated series, the plot of the cartoon is developed in the American town of the same name. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/yfUDIPUETUg" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://tlum.ru/uploads/3457925d93fb1246e7c4e5d759e325fa5d16e856c4dadac8e6b4b9ed1d68f55c.jpeg" alt="">
+                            <span class="movie-list-item-title">Onward</span>
+                            <p class="movie-list-item-desc">Once upon a time, magic reigned in a fairy-tale world, but after the discovery of electricity, magicians were no longer needed. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/gn5QmllRCn4" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://cdn.mos.cms.futurecdn.net/CMkQCeNRJWeMxccdbUTSbi.jpg" alt="">
+                            <span class="movie-list-item-title">The Croods: A New Age</span>
+                            <p class="movie-list-item-desc">If you’ve seen DreamWorks Animation’s 2013 film The Croods, you mostly know what you’re getting into with this one.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/GkXeVIfbJOw" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+
+            <div class="movie-list-container">
+                <h1 onmouseover="style.color='green'" onmouseout="style.color='white'" class="movie-list-title">COMEDY</h1>
+
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  font-size: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: green;
+}
+</style>
+</head>
+<body>
+
+
+<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+
+<script>
+function myFunction(x) {
+  x.classList.toggle("fa-thumbs-down");
+}
+</script>
+
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://static.okko.tv/images/v2/17443646" alt="">
+                            <span class="movie-list-item-title">Garfield</span>
+                            <p class="movie-list-item-desc">The fat and lazy ginger cat has nothing to worry about in the future.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/GV5y4yTDtBI" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNDhiOTZkOGQtODcxYi00YTBiLTg4NzItZDU5NDQzOTg0MThlXkEyXkFqcGdeQXVyNzU4Njg1MzU@._V1_.jpg" alt="">
+                            <span class="movie-list-item-title">Kazakh Business</span>
+                            <p class="movie-list-item-desc">Zhomart is an ordinary businessman who owns a hotel and soon has a new turnover and new breath in his business a big investor is interested in his project.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/HE1kTDcKjyQ" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://www.pommpoire.fr/blog/wp-content/uploads/2018/07/film-body-positive-i-feel-pretty.jpg" alt="">
+                            <span class="movie-list-item-title">I feel pretty</span>
+                            <p class="movie-list-item-desc">Renee Bennett is a young girl who does not have perfect forms, which affects her personal life.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/cVx9EFK3DWE" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="http://nitehawkcinema.files.wordpress.com/2013/05/1238490.jpg" alt="">
+                            <span class="movie-list-item-title">Best in show</span>
+                            <p class="movie-list-item-desc">Best in Show is a 2000 American mockumentary comedy film and spoof of American dog shows, co-written by Christopher Guest and Eugene Levy and directed by Guest.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/94y9n9lNy2Y" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://avatars.mds.yandex.net/get-ott/224348/2a000001626d3bfd64104ee81e873a01e8ce/678x380" alt="">
+                            <span class="movie-list-item-title">Deadpool</span>
+                            <p class="movie-list-item-desc">Wade Wilson is a mercenary. As a byproduct of a military program called "Weapon X," Wilson has gained incredible strength, agility, and healing powers.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/ONHBaC-pfsk" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://www.film.ru/sites/default/files/styles/thumb_1024x450/public/trailers_frame/work-it-netflix.jpg" alt="">
+                            <span class="movie-list-item-title">Work it</span>
+                            <p class="movie-list-item-desc">Quinn dreams of winning a dance competition to make her way to a prestigious college.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/OqcP_wkcl2I" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://occ-0-1722-1723.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABURixsSus9MJO6NKpEeEyP07Gk_gRGQOlT2GMoJfkgEfiNtsFDWBJnsXw9iBg9k0uQtuTD8CK-Kpf2Y0j2P1MOL2g4aW8UQGdIiRRBqdvdY6hNdLX0_o31foU5z3BA.jpg?r=e0c" alt="">
+                            <span class="movie-list-item-title">Holidate</span>
+                            <p class="movie-list-item-desc">Randomly meeting at a store return counter introduces Sloane to Jackson.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <a href="https://youtu.be/hxaaAoI57fk" class="movie-list-item-button">Watch trailer now</a>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+           
+
+
+
+
+</body>
+
+</html>
+
