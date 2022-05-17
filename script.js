@@ -1,114 +1,52 @@
-var radius = 240;
-var autoRotate = true;
-var rotateSpeed = -60;
-var imgWidth = 120; 
-var imgHeight = 170;
+'use strict';
 
+/**
+ * navbar variables
+ */
 
-var bgMusicURL = 'https://api.soundcloud.com/tracks/143041228/stream?client_id=587aa2d384f7333a886010d5f52f302a';
-var bgMusicControls = true;
+const navOpenBtn = document.querySelector("[data-menu-open-btn]");
+const navCloseBtn = document.querySelector("[data-menu-close-btn]");
+const navbar = document.querySelector("[data-navbar]");
+const overlay = document.querySelector("[data-overlay]");
 
+const navElemArr = [navOpenBtn, navCloseBtn, overlay];
 
+for (let i = 0; i < navElemArr.length; i++) {
 
-setTimeout(init, 100);
+  navElemArr[i].addEventListener("click", function () {
 
-var obox = document.getElementById('drag-container');
-var ospin = document.getElementById('spin-container');
-var aImg = ospin.getElementsByTagName('img');
-var aVid = ospin.getElementsByTagName('video');
-var aEle = [...aImg, ...aVid];
+    navbar.classList.toggle("active");
+    overlay.classList.toggle("active");
+    document.body.classList.toggle("active");
 
+  });
 
-ospin.style.width = imgWidth + "px";
-ospin.style.height = imgHeight + "px";
-
-
-var ground = document.getElementById('ground');
-ground.style.width = radius * 3 + "px";
-ground.style.height = radius * 3 + "px";
-
-function init(delayTime) {
-  for (var i = 0; i < aEle.length; i++) {
-    aEle[i].style.transform = "rotateY(" + (i * (360 / aEle.length)) + "deg) translateZ(" + radius + "px)";
-    aEle[i].style.transition = "transform 1s";
-    aEle[i].style.transitionDelay = delayTime || (aEle.length - i) / 4 + "s";
-  }
-}
-
-function applyTranform(obj) {
-
-  if(tY > 180) tY = 180;
-  if(tY < 0) tY = 0;
-
-  obj.style.transform = "rotateX(" + (-tY) + "deg) rotateY(" + (tX) + "deg)";
-}
-
-function playSpin(yes) {
-  ospin.style.animationPlayState = (yes?'running':'paused');
-}
-
-var sX, sY, nX, nY, desX = 0,
-    desY = 0,
-    tX = 0,
-    tY = 10;
-
-
-if (autoRotate) {
-  var animationName = (rotateSpeed > 0 ? 'spin' : 'spinRevert');
-  ospin.style.animation = `${animationName} ${Math.abs(rotateSpeed)}s infinite linear`;
 }
 
 
-if (bgMusicURL) {
-  document.getElementById('music-container').innerHTML += `
-<audio src="${bgMusicURL}" ${bgMusicControls? 'controls': ''} autoplay loop>    
-<p>If you are reading this, it is because your browser does not support the audio element.</p>
-</audio>
-`;
-}
+
+/**
+ * header sticky
+ */
+
+const header = document.querySelector("[data-header]");
+
+window.addEventListener("scroll", function () {
+
+  window.scrollY >= 10 ? header.classList.add("active") : header.classList.remove("active");
+
+});
 
 
-document.onpointerdown = function (e) {
-  clearInterval(obox.timer);
-  e = e || window.event;
-  var sX = e.clientX,
-      sY = e.clientY;
 
-  this.onpointermove = function (e) {
-    e = e || window.event;
-    var nX = e.clientX,
-        nY = e.clientY;
-    desX = nX - sX;
-    desY = nY - sY;
-    tX += desX * 0.1;
-    tY += desY * 0.1;
-    applyTranform(obox);
-    sX = nX;
-    sY = nY;
-  };
+/**
+ * go top
+ */
 
-  this.onpointerup = function (e) {
-    obox.timer = setInterval(function () {
-      desX *= 0.95;
-      desY *= 0.95;
-      tX += desX * 0.1;
-      tY += desY * 0.1;
-      applyTranform(obox);
-      playSpin(false);
-      if (Math.abs(desX) < 0.5 && Math.abs(desY) < 0.5) {
-        clearInterval(obox.timer);
-        playSpin(true);
-      }
-    }, 17);
-    this.onpointermove = this.onpointerup = null;
-  };
+const goTopBtn = document.querySelector("[data-go-top]");
 
-  return false;
-};
+window.addEventListener("scroll", function () {
 
-document.onmousewheel = function(e) {
-  e = e || window.event;
-  var d = e.wheelDelta / 20 || -e.detail;
-  radius += d;
-  init(1);
-};
+  window.scrollY >= 500 ? goTopBtn.classList.add("active") : goTopBtn.classList.remove("active");
+
+});
